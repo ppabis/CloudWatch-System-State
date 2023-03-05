@@ -1,7 +1,7 @@
 resource "aws_instance" "ubuntu" {
-  ami           = data.aws_ami.ubuntu-arm.id
-  instance_type = "t4g.micro"
-  key_name      = aws_key_pair.ssh.key_name
+  ami                  = data.aws_ami.ubuntu-arm.id
+  instance_type        = "t4g.micro"
+  key_name             = aws_key_pair.ssh.key_name
   tags = {
     Name = "Ubuntu"
   }
